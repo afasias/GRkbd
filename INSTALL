@@ -1,0 +1,41 @@
+
+GRkbd - Greek keyboard for the X Window System
+Copyright (C) 1998-2007 Giannis Tsakiris
+
+Building and installation instructions
+--------------------------------------
+
+Before proceed to the compilation of grkbd make sure that you have development
+tools (C compiler, linker and make utility). In debian based distributions
+these can be found in the "build-essential" package.
+To check if you have these tools installed you can type "gcc" at your shell
+prompt and see the response. If the output is "no input files" you have them.
+If the answer is "command not found" you have to install them.
+
+Also, you have to make sure that you have the X11 header files in your system.
+You can find the header files in the package "xlibs-dev". To check wether you
+have the header files or not, you can search for the file Xlib.h in you file
+system (normally, it will be under /usr/include).
+
+After finishing with the prerequisities you can go ahead with the installation.
+Presumably, you have already untared the tarball and jumped into the created
+folder. At this point, you may need to edit the Makefile and change CFLAGS to
+specify any additional directories for header files and libraries. After that,
+you can go ahead and run:
+
+# make
+
+If the program compiles without errors, you can optionally install it in your
+system for it to be available for all users. To do so type:
+
+# sudo make install
+
+This will install grkbd in your /usr/local/bin directory.
+
+For any queries about grkbd you contact the author by e-mail in this address:
+giannis.tsakiris@gmail.com
+
+Official site of grkbd (in greek only): http://grkbd.sourceforge.net
+
+EOF
+
